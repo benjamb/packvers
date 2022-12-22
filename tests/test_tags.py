@@ -19,8 +19,8 @@ import types
 import pretend
 import pytest
 
-from packaging2 import tags
-from packaging2._musllinux import _MuslVersion
+from packvers import tags
+from packvers._musllinux import _MuslVersion
 
 
 @pytest.fixture

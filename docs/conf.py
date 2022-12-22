@@ -41,7 +41,7 @@ project = "Packaging"
 
 base_dir = os.path.join(os.path.dirname(__file__), os.pardir)
 about = {}
-with open(os.path.join(base_dir, "packaging2", "__about__.py")) as f:
+with open(os.path.join(base_dir, "packvers", "__about__.py")) as f:
     exec(f.read(), about)
 
 version = release = about["__version__"]
@@ -52,8 +52,8 @@ copyright = about["__copyright__"]
 exclude_patterns = ["_build"]
 
 extlinks = {
-    "issue": ("https://github.com/nexb/packaging2/issues/%s", "#"),
-    "pull": ("https://github.com/nexb/packaging2/pull/%s", "PR #"),
+    "issue": ("https://github.com/nexb/packvers/issues/%s", "#"),
+    "pull": ("https://github.com/nexb/packvers/pull/%s", "PR #"),
 }
 # -- Options for HTML output --------------------------------------------------
 
@@ -61,7 +61,7 @@ extlinks = {
 # a list of builtin themes.
 
 html_theme = "furo"
-html_title = "packaging2"
+html_title = "packvers"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -81,7 +81,7 @@ latex_elements = {}
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [("index", "packaging2", "Packaging2 Documentation", ["Donald Stufft"], 1)]
+man_pages = [("index", "packvers", "packvers Documentation", ["Donald Stufft"], 1)]
 
 # -- Options for Texinfo output -----------------------------------------------
 
@@ -91,10 +91,10 @@ man_pages = [("index", "packaging2", "Packaging2 Documentation", ["Donald Stufft
 texinfo_documents = [
     (
         "index",
-        "packaging2",
-        "Packaging2 Documentation",
+        "packvers",
+        "packvers Documentation",
         "Donald Stufft",
-        "packaging2",
+        "packvers",
         "Core utilities for Python packages",
         "Miscellaneous",
     )

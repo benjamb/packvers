@@ -7,8 +7,8 @@ import subprocess
 import pretend
 import pytest
 
-from packaging2 import _musllinux
-from packaging2._musllinux import (
+from packvers import _musllinux
+from packvers._musllinux import (
     _get_musl_version,
     _MuslVersion,
     _parse_ld_musl_from_elf,

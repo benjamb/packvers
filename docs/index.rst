@@ -1,4 +1,4 @@
-Welcome to packaging2
+Welcome to packvers
 =====================
 
 .. include:: ../README.rst
@@ -9,11 +9,11 @@ Welcome to packaging2
 Installation
 ------------
 
-You can install packaging2 with ``pip``:
+You can install packvers with ``pip``:
 
 .. code-block:: console
 
-    $ pip install packaging2
+    $ pip install packvers
 
 
 .. toctree::

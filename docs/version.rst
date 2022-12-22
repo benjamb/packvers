@@ -1,7 +1,7 @@
 Version Handling
 ================
 
-.. currentmodule:: packaging2.version
+.. currentmodule:: packvers.version
 
 A core requirement of dealing with packages is the ability to work with
 versions. `PEP 440`_ defines the standard version scheme for Python packages
@@ -12,7 +12,7 @@ Usage
 
 .. doctest::
 
-    >>> from packaging2.version import Version, parse
+    >>> from packvers.version import Version, parse
     >>> v1 = parse("1.0a5")
     >>> v2 = Version("1.0")
     >>> v1
@@ -159,7 +159,7 @@ Reference
 
         :class:`LegacyVersion` instances are always ordered lower than :class:`Version` instances.
 
-        >>> from packaging2.version import Version, LegacyVersion
+        >>> from packvers.version import Version, LegacyVersion
         >>> v1 = Version("1.0")
         >>> v2 = LegacyVersion("1.0")
         >>> v1 > v2
@@ -172,7 +172,7 @@ Reference
         other versions that are not (:class:`LegacyVersion`). Examples include versions with `Pre-release spelling`_ and
         `Post-release spelling`_.
 
-        >>> from packaging2.version import parse
+        >>> from packvers.version import parse
         >>> v1 = parse('0.9.8a')
         >>> v2 = parse('0.9.8beta')
         >>> v3 = parse('0.9.8r')

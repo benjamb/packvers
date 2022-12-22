@@ -21,7 +21,7 @@ except ImportError:
 base_dir = os.path.dirname(__file__)
 
 about = {}
-with open(os.path.join(base_dir, "packaging2", "__about__.py")) as f:
+with open(os.path.join(base_dir, "packvers", "__about__.py")) as f:
     exec(f.read(), about)
 
 with open(os.path.join(base_dir, "README.rst")) as f:
@@ -59,6 +59,6 @@ setup(
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
     ],
-    packages=["packaging2"],
-    package_data={"packaging2": ["py.typed"]},
+    packages=["packvers"],
+    package_data={"packvers": ["py.typed"]},
 )

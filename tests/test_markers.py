@@ -10,7 +10,7 @@ import sys
 
 import pytest
 
-from packaging2.markers import (
+from packvers.markers import (
     InvalidMarker,
     Marker,
     Node,

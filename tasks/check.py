@@ -11,7 +11,7 @@ import invoke
 import pkg_resources
 import progress.bar
 
-from packaging2.version import Version
+from packvers.version import Version
 
 from .paths import CACHE
 

@@ -1,9 +1,9 @@
-packaging2
+packvers
 ==========
 
 .. start-intro
 
-packaging2 is friendly fork of packaging to work around the drop for
+packvers is friendly fork of packaging to work around the drop for
 LegacyVersion support. See https://github.com/pypa/packaging/issues/530
 
 
@@ -16,7 +16,7 @@ or benefit greatly from having a single shared implementation (eg: :pep:`425`).
 
 .. end-intro
 
-The ``packaging2`` project includes the following: version handling, specifiers,
+The ``packvers`` project includes the following: version handling, specifiers,
 markers, requirements, tags, utilities.
 
 Documentation
@@ -36,7 +36,7 @@ Installation
 
 Use ``pip`` to install these utilities::
 
-    pip install packaging2
+    pip install packvers
 
 Discussion
 ----------
@@ -44,7 +44,7 @@ Discussion
 If you run into bugs, you can file them in our `issue tracker`_.
 
 
-.. _`issue tracker`: https://github.com/nexB/packaging2/issues
+.. _`issue tracker`: https://github.com/nexB/packvers/issues
 
 
 Code of Conduct

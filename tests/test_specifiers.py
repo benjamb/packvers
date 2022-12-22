@@ -8,13 +8,13 @@ import warnings
 
 import pytest
 
-from packaging2.specifiers import (
+from packvers.specifiers import (
     InvalidSpecifier,
     LegacySpecifier,
     Specifier,
     SpecifierSet,
 )
-from packaging2.version import LegacyVersion, Version, parse
+from packvers.version import LegacyVersion, Version, parse
 
 from .test_version import LEGACY_VERSIONS, VERSIONS
 

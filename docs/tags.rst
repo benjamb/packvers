@@ -1,7 +1,7 @@
 Tags
 ====
 
-.. currentmodule:: packaging2.tags
+.. currentmodule:: packvers.tags
 
 Wheels encode the Python interpreter, ABI, and platform that they support in
 their filenames using `platform compatibility tags`_. This module provides
@@ -13,7 +13,7 @@ Usage
 
 .. doctest::
 
-    >>> from packaging2.tags import Tag, sys_tags
+    >>> from packvers.tags import Tag, sys_tags
     >>> import sys
     >>> looking_for = Tag("py{major}".format(major=sys.version_info.major), "none", "any")
     >>> supported_tags = list(sys_tags())

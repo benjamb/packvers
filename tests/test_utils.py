@@ -4,8 +4,8 @@
 
 import pytest
 
-from packaging2.tags import Tag
-from packaging2.utils import (
+from packvers.tags import Tag
+from packvers.utils import (
     InvalidSdistFilename,
     InvalidWheelFilename,
     canonicalize_name,
@@ -13,7 +13,7 @@ from packaging2.utils import (
     parse_sdist_filename,
     parse_wheel_filename,
 )
-from packaging2.version import Version
+from packvers.version import Version
 
 
 @pytest.mark.parametrize(
