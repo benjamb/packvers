@@ -60,11 +60,11 @@ Contributing
 
 The ``CONTRIBUTING.rst`` file outlines how to contribute to this project as
 well as how to report a potential security issue. The documentation for this
-project also covers information about `project development`_ and `security`_.
+project also covers information about `project development` and `security`.
 
 
 Project History
 ---------------
 
-Please review the ``CHANGELOG.rst`` file or the `Changelog documentation`_ for
+Please review the ``CHANGELOG.rst`` file or the `Changelog documentation` for
 recent changes and project history.
