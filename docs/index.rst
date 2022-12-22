@@ -1,5 +1,5 @@
-Welcome to packaging
-====================
+Welcome to packaging2
+=====================
 
 .. include:: ../README.rst
    :start-after: start-intro
@@ -9,11 +9,11 @@ Welcome to packaging
 Installation
 ------------
 
-You can install packaging with ``pip``:
+You can install packaging2 with ``pip``:
 
 .. code-block:: console
 
-    $ pip install packaging
+    $ pip install packaging2
 
 
 .. toctree::

@@ -4,7 +4,7 @@
 
 import pytest
 
-from packaging._structures import Infinity, NegativeInfinity
+from packaging2._structures import Infinity, NegativeInfinity
 
 
 def test_infinity_repr():

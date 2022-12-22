@@ -9,7 +9,7 @@ import warnings
 import pretend
 import pytest
 
-from packaging.version import InvalidVersion, LegacyVersion, Version, parse
+from packaging2.version import InvalidVersion, LegacyVersion, Version, parse
 
 
 @pytest.mark.parametrize(

@@ -1,7 +1,7 @@
 Specifiers
 ==========
 
-.. currentmodule:: packaging.specifiers
+.. currentmodule:: packaging2.specifiers
 
 A core requirement of dealing with dependencies is the ability to specify what
 versions of a dependency are acceptable for you. `PEP 440`_ defines the
@@ -12,8 +12,8 @@ Usage
 
 .. doctest::
 
-    >>> from packaging.specifiers import SpecifierSet
-    >>> from packaging.version import Version
+    >>> from packaging2.specifiers import SpecifierSet
+    >>> from packaging2.version import Version
     >>> spec1 = SpecifierSet("~=1.0")
     >>> spec1
     <SpecifierSet('~=1.0')>

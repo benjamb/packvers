@@ -4,9 +4,9 @@
 
 import pytest
 
-from packaging.markers import Marker
-from packaging.requirements import URL, URL_AND_MARKER, InvalidRequirement, Requirement
-from packaging.specifiers import SpecifierSet
+from packaging2.markers import Marker
+from packaging2.requirements import URL, URL_AND_MARKER, InvalidRequirement, Requirement
+from packaging2.specifiers import SpecifierSet
 
 
 class TestRequirements:

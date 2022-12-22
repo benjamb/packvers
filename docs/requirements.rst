@@ -1,7 +1,7 @@
 Requirements
 ============
 
-.. currentmodule:: packaging.requirements
+.. currentmodule:: packaging2.requirements
 
 Parse a given requirements line for specifying dependencies of a Python
 project, using `PEP 508`_ which defines the scheme that has been implemented
@@ -12,7 +12,7 @@ Usage
 
 .. doctest::
 
-    >>> from packaging.requirements import Requirement
+    >>> from packaging2.requirements import Requirement
     >>> simple_req = Requirement("name")
     >>> simple_req
     <Requirement('name')>

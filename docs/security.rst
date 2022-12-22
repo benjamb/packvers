@@ -1,7 +1,7 @@
 Security
 ========
 
-We take the security of packaging seriously. If you believe you've identified a
+We take the security of packaging2 seriously. If you believe you've identified a
 security issue in it, DO NOT report the issue in any public forum, including
 (but not limited to):
 

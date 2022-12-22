@@ -34,7 +34,7 @@ def tests(session):
         coverage(
             "run",
             "--source",
-            "packaging/",
+            "packaging2/",
             "-m",
             "pytest",
             "--strict-markers",
@@ -93,7 +93,7 @@ def docs(session):
 
 @nox.session
 def release(session):
-    package_name = "packaging"
+    package_name = "packaging2"
     version_file = Path(f"{package_name}/__about__.py")
     changelog_file = Path("CHANGELOG.rst")
 
@@ -167,7 +167,7 @@ def release(session):
     session.run("twine", "upload", *files)
 
     # Open up the GitHub release page.
-    webbrowser.open("https://github.com/pypa/packaging/releases")
+    webbrowser.open("https://github.com/nexb/packaging2/releases")
 
 
 # -----------------------------------------------------------------------------
@@ -210,8 +210,8 @@ def _check_git_state(session, version_tag):
     """Check state of the git repository, prior to making the release."""
     # Ensure the upstream remote pushes to the correct URL.
     allowed_upstreams = [
-        "git@github.com:pypa/packaging.git",
-        "https://github.com/pypa/packaging.git",
+        "git@github.com:nexb/packaging2.git",
+        "https://github.com/nexb/packaging2.git",
     ]
     result = subprocess.run(
         ["git", "remote", "get-url", "--push", "upstream"],

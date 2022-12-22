@@ -41,7 +41,7 @@ project = "Packaging"
 
 base_dir = os.path.join(os.path.dirname(__file__), os.pardir)
 about = {}
-with open(os.path.join(base_dir, "packaging", "__about__.py")) as f:
+with open(os.path.join(base_dir, "packaging2", "__about__.py")) as f:
     exec(f.read(), about)
 
 version = release = about["__version__"]
@@ -52,8 +52,8 @@ copyright = about["__copyright__"]
 exclude_patterns = ["_build"]
 
 extlinks = {
-    "issue": ("https://github.com/pypa/packaging/issues/%s", "#"),
-    "pull": ("https://github.com/pypa/packaging/pull/%s", "PR #"),
+    "issue": ("https://github.com/nexb/packaging2/issues/%s", "#"),
+    "pull": ("https://github.com/nexb/packaging2/pull/%s", "PR #"),
 }
 # -- Options for HTML output --------------------------------------------------
 
@@ -61,7 +61,7 @@ extlinks = {
 # a list of builtin themes.
 
 html_theme = "furo"
-html_title = "packaging"
+html_title = "packaging2"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -76,17 +76,12 @@ htmlhelp_basename = "packagingdoc"
 
 latex_elements = {}
 
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title, author, documentclass [howto/manual])
-latex_documents = [
-    ("index", "packaging.tex", "Packaging Documentation", "Donald Stufft", "manual")
-]
 
 # -- Options for manual page output -------------------------------------------
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [("index", "packaging", "Packaging Documentation", ["Donald Stufft"], 1)]
+man_pages = [("index", "packaging2", "Packaging2 Documentation", ["Donald Stufft"], 1)]
 
 # -- Options for Texinfo output -----------------------------------------------
 
@@ -96,10 +91,10 @@ man_pages = [("index", "packaging", "Packaging Documentation", ["Donald Stufft"]
 texinfo_documents = [
     (
         "index",
-        "packaging",
-        "Packaging Documentation",
+        "packaging2",
+        "Packaging2 Documentation",
         "Donald Stufft",
-        "packaging",
+        "packaging2",
         "Core utilities for Python packages",
         "Miscellaneous",
     )

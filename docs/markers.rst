@@ -1,7 +1,7 @@
 Markers
 =======
 
-.. currentmodule:: packaging.markers
+.. currentmodule:: packaging2.markers
 
 One extra requirement of dealing with dependencies is the ability to specify
 if it is required depending on the operating system or Python version in use.
@@ -12,7 +12,7 @@ Usage
 
 .. doctest::
 
-    >>> from packaging.markers import Marker, UndefinedEnvironmentName
+    >>> from packaging2.markers import Marker, UndefinedEnvironmentName
     >>> marker = Marker("python_version>'2'")
     >>> marker
     <Marker('python_version > "2"')>

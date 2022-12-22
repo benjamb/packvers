@@ -13,11 +13,11 @@ __all__ = [
     "__copyright__",
 ]
 
-__title__ = "packaging"
-__summary__ = "Core utilities for Python packages"
-__uri__ = "https://github.com/pypa/packaging"
+__title__ = "packaging2"
+__summary__ = "Core utilities for Python packages. Fork to support LegacyVersion"
+__uri__ = "https://github.com/nexB/packaging2"
 
-__version__ = "21.3"
+__version__ = "21.4"
 
 __author__ = "Donald Stufft and individual contributors"
 __email__ = "donald@stufft.io"

@@ -1,12 +1,19 @@
 Changelog
 ---------
 
+21.4 - 2022-12-22
+~~~~~~~~~~~~~~~~~
+
+* Fork of v21.3 to packaging2 as a workaround of https://github.com/pypa/packaging/issues/530
+  and reinstate support for LegacyVersion and LegacySpecifier
+
+
 21.3 - 2021-11-17
 ~~~~~~~~~~~~~~~~~
 
-* Add a ``pp3-none-any`` tag (:issue:`311`)
-* Replace the blank pyparsing 3 exclusion with a 3.0.5 exclusion (:issue:`481`, :issue:`486`)
-* Fix a spelling mistake (:issue:`479`)
+* Add a ``pp3-none-any`` tag (`#311 <https://github.com/pypa/packaging/issues/311>`__)
+* Replace the blank pyparsing 3 exclusion with a 3.0.5 exclusion (`#481 <https://github.com/pypa/packaging/issues/481>`__, `#486 <https://github.com/pypa/packaging/issues/486>`__)
+* Fix a spelling mistake (`#479 <https://github.com/pypa/packaging/issues/479>`__)
 
 21.2 - 2021-10-29
 ~~~~~~~~~~~~~~~~~
@@ -21,33 +28,33 @@ Changelog
 21.0 - 2021-07-03
 ~~~~~~~~~~~~~~~~~
 
-* PEP 656: musllinux support (:issue:`411`)
+* PEP 656: musllinux support (`#411 <https://github.com/pypa/packaging/issues/411>`__)
 * Drop support for Python 2.7, Python 3.4 and Python 3.5.
-* Replace distutils usage with sysconfig (:issue:`396`)
-* Add support for zip files in ``parse_sdist_filename`` (:issue:`429`)
-* Use cached ``_hash`` attribute to short-circuit tag equality comparisons (:issue:`417`)
-* Specify the default value for the ``specifier`` argument to ``SpecifierSet`` (:issue:`437`)
-* Proper keyword-only "warn" argument in packaging.tags (:issue:`403`)
-* Correctly remove prerelease suffixes from ~= check (:issue:`366`)
-* Fix type hints for ``Version.post`` and ``Version.dev`` (:issue:`393`)
-* Use typing alias ``UnparsedVersion`` (:issue:`398`)
-* Improve type inference for ``packaging.specifiers.filter()`` (:issue:`430`)
-* Tighten the return type of ``canonicalize_version()`` (:issue:`402`)
+* Replace distutils usage with sysconfig (`#396 <https://github.com/pypa/packaging/issues/396>`__)
+* Add support for zip files in ``parse_sdist_filename`` (`#429 <https://github.com/pypa/packaging/issues/429>`__)
+* Use cached ``_hash`` attribute to short-circuit tag equality comparisons (`#417 <https://github.com/pypa/packaging/issues/417>`__)
+* Specify the default value for the ``specifier`` argument to ``SpecifierSet`` (`#437 <https://github.com/pypa/packaging/issues/437>`__)
+* Proper keyword-only "warn" argument in packaging.tags (`#403 <https://github.com/pypa/packaging/issues/403>`__)
+* Correctly remove prerelease suffixes from ~= check (`#366 <https://github.com/pypa/packaging/issues/366>`__)
+* Fix type hints for ``Version.post`` and ``Version.dev`` (`#393 <https://github.com/pypa/packaging/issues/393>`__)
+* Use typing alias ``UnparsedVersion`` (`#398 <https://github.com/pypa/packaging/issues/398>`__)
+* Improve type inference for ``packaging.specifiers.filter()`` (`#430 <https://github.com/pypa/packaging/issues/430>`__)
+* Tighten the return type of ``canonicalize_version()`` (`#402 <https://github.com/pypa/packaging/issues/402>`__)
 
 20.9 - 2021-01-29
 ~~~~~~~~~~~~~~~~~
 
-* Run `isort <https://pypi.org/project/isort/>`_ over the code base (:issue:`377`)
-* Add support for the ``macosx_10_*_universal2`` platform tags (:issue:`379`)
+* Run `isort <https://pypi.org/project/isort/>`_ over the code base (`#377 <https://github.com/pypa/packaging/issues/377>`__)
+* Add support for the ``macosx_10_*_universal2`` platform tags (`#379 <https://github.com/pypa/packaging/issues/379>`__)
 * Introduce ``packaging.utils.parse_wheel_filename()`` and ``parse_sdist_filename()``
-  (:issue:`387` and :issue:`389`)
+  (`#387 <https://github.com/pypa/packaging/issues/387>`__ and `#389 <https://github.com/pypa/packaging/issues/389>`__)
 
 20.8 - 2020-12-11
 ~~~~~~~~~~~~~~~~~
 
-* Revert back to setuptools for compatibility purposes for some Linux distros (:issue:`363`)
+* Revert back to setuptools for compatibility purposes for some Linux distros (`#363 <https://github.com/pypa/packaging/issues/363>`__)
 * Do not insert an underscore in wheel tags when the interpreter version number
-  is more than 2 digits (:issue:`372`)
+  is more than 2 digits (`#372 <https://github.com/pypa/packaging/issues/372>`__)
 
 20.7 - 2020-11-28
 ~~~~~~~~~~~~~~~~~
@@ -59,22 +66,22 @@ No unreleased changes.
 
 .. note:: This release was subsequently yanked, and these changes were included in 20.7.
 
-* Fix flit configuration, to include LICENSE files (:issue:`357`)
-* Make `intel` a recognized CPU architecture for the `universal` macOS platform tag (:issue:`361`)
+* Fix flit configuration, to include LICENSE files (`#357 <https://github.com/pypa/packaging/issues/357>`__)
+* Make `intel` a recognized CPU architecture for the `universal` macOS platform tag (`#361 <https://github.com/pypa/packaging/issues/361>`__)
 * Add some missing type hints to `packaging.requirements` (issue:`350`)
 
 20.5 - 2020-11-27
 ~~~~~~~~~~~~~~~~~
 
-* Officially support Python 3.9 (:issue:`343`)
-* Deprecate the ``LegacyVersion`` and ``LegacySpecifier`` classes (:issue:`321`)
+* Officially support Python 3.9 (`#343 <https://github.com/pypa/packaging/issues/343>`__)
+* Deprecate the ``LegacyVersion`` and ``LegacySpecifier`` classes (`#321 <https://github.com/pypa/packaging/issues/321>`__)
 * Handle ``OSError`` on non-dynamic executables when attempting to resolve
   the glibc version string.
 
 20.4 - 2020-05-19
 ~~~~~~~~~~~~~~~~~
 
-* Canonicalize version before comparing specifiers. (:issue:`282`)
+* Canonicalize version before comparing specifiers. (`#282 <https://github.com/pypa/packaging/issues/282>`__)
 * Change type hint for ``canonicalize_name`` to return
   ``packaging.utils.NormalizedName``.
   This enables the use of static typing tools (like mypy) to detect mixing of
@@ -94,48 +101,48 @@ No unreleased changes.
 20.1 - 2020-01-24
 ~~~~~~~~~~~~~~~~~~~
 
-* Fix a bug caused by reuse of an exhausted iterator. (:issue:`257`)
+* Fix a bug caused by reuse of an exhausted iterator. (`#257 <https://github.com/pypa/packaging/issues/257>`__)
 
 20.0 - 2020-01-06
 ~~~~~~~~~~~~~~~~~
 
-* Add type hints (:issue:`191`)
+* Add type hints (`#191 <https://github.com/pypa/packaging/issues/191>`__)
 
-* Add proper trove classifiers for PyPy support (:issue:`198`)
+* Add proper trove classifiers for PyPy support (`#198 <https://github.com/pypa/packaging/issues/198>`__)
 
-* Scale back depending on ``ctypes`` for manylinux support detection (:issue:`171`)
+* Scale back depending on ``ctypes`` for manylinux support detection (`#171 <https://github.com/pypa/packaging/issues/171>`__)
 
-* Use ``sys.implementation.name`` where appropriate for ``packaging.tags`` (:issue:`193`)
+* Use ``sys.implementation.name`` where appropriate for ``packaging.tags`` (`#193 <https://github.com/pypa/packaging/issues/193>`__)
 
-* Expand upon the API provided by ``packaging.tags``: ``interpreter_name()``, ``mac_platforms()``, ``compatible_tags()``, ``cpython_tags()``, ``generic_tags()`` (:issue:`187`)
+* Expand upon the API provided by ``packaging.tags``: ``interpreter_name()``, ``mac_platforms()``, ``compatible_tags()``, ``cpython_tags()``, ``generic_tags()`` (`#187 <https://github.com/pypa/packaging/issues/187>`__)
 
-* Officially support Python 3.8 (:issue:`232`)
+* Officially support Python 3.8 (`#232 <https://github.com/pypa/packaging/issues/232>`__)
 
-* Add ``major``, ``minor``, and ``micro`` aliases to ``packaging.version.Version`` (:issue:`226`)
+* Add ``major``, ``minor``, and ``micro`` aliases to ``packaging.version.Version`` (`#226 <https://github.com/pypa/packaging/issues/226>`__)
 
-* Properly mark ``packaging`` has being fully typed by adding a `py.typed` file (:issue:`226`)
+* Properly mark ``packaging`` has being fully typed by adding a `py.typed` file (`#226 <https://github.com/pypa/packaging/issues/226>`__)
 
 19.2 - 2019-09-18
 ~~~~~~~~~~~~~~~~~
 
-* Remove dependency on ``attrs`` (:issue:`178`, :issue:`179`)
+* Remove dependency on ``attrs`` (`#178 <https://github.com/pypa/packaging/issues/178>`__, `#179 <https://github.com/pypa/packaging/issues/179>`__)
 
-* Use appropriate fallbacks for CPython ABI tag (:issue:`181`, :issue:`185`)
+* Use appropriate fallbacks for CPython ABI tag (`#181 <https://github.com/pypa/packaging/issues/181>`__, `#185 <https://github.com/pypa/packaging/issues/185>`__)
 
-* Add manylinux2014 support (:issue:`186`)
+* Add manylinux2014 support (`#186 <https://github.com/pypa/packaging/issues/186>`__)
 
-* Improve ABI detection (:issue:`181`)
+* Improve ABI detection (`#181 <https://github.com/pypa/packaging/issues/181>`__)
 
-* Properly handle debug wheels for Python 3.8 (:issue:`172`)
+* Properly handle debug wheels for Python 3.8 (`#172 <https://github.com/pypa/packaging/issues/172>`__)
 
-* Improve detection of debug builds on Windows (:issue:`194`)
+* Improve detection of debug builds on Windows (`#194 <https://github.com/pypa/packaging/issues/194>`__)
 
 19.1 - 2019-07-30
 ~~~~~~~~~~~~~~~~~
 
-* Add the ``packaging.tags`` module. (:issue:`156`)
+* Add the ``packaging.tags`` module. (`#156 <https://github.com/pypa/packaging/issues/156>`__)
 
-* Correctly handle two-digit versions in ``python_version`` (:issue:`119`)
+* Correctly handle two-digit versions in ``python_version`` (`#119 <https://github.com/pypa/packaging/issues/119>`__)
 
 
 19.0 - 2019-01-20
@@ -155,7 +162,7 @@ No unreleased changes.
 18.0 - 2018-09-26
 ~~~~~~~~~~~~~~~~~
 
-* Improve error messages when invalid requirements are given. (:issue:`129`)
+* Improve error messages when invalid requirements are given. (`#129 <https://github.com/pypa/packaging/issues/129>`__)
 
 
 17.1 - 2017-02-28
@@ -169,16 +176,16 @@ No unreleased changes.
 
 * Drop support for python 2.6, 3.2, and 3.3.
 
-* Define minimal pyparsing version to 2.0.2 (:issue:`91`).
+* Define minimal pyparsing version to 2.0.2 (`#91 <https://github.com/pypa/packaging/issues/91>`__).
 
 * Add ``epoch``, ``release``, ``pre``, ``dev``, and ``post`` attributes to
-  ``Version`` and ``LegacyVersion`` (:issue:`34`).
+  ``Version`` and ``LegacyVersion`` (`#34 <https://github.com/pypa/packaging/issues/34>`__).
 
 * Add ``Version().is_devrelease`` and ``LegacyVersion().is_devrelease`` to
   make it easy to determine if a release is a development release.
 
 * Add ``utils.canonicalize_version`` to canonicalize version strings or
-  ``Version`` instances (:issue:`121`).
+  ``Version`` instances (`#121 <https://github.com/pypa/packaging/issues/121>`__).
 
 
 16.8 - 2016-10-29
@@ -244,7 +251,7 @@ No unreleased changes.
 * Support installation of packaging when only distutils is available.
 
 * Fix ``==`` comparison when there is a prefix and a local version in play.
-  (:issue:`41`).
+  (`#41 <https://github.com/pypa/packaging/issues/41>`__).
 
 * Implement environment markers from PEP 508.
 
@@ -252,7 +259,7 @@ No unreleased changes.
 15.3 - 2015-08-01
 ~~~~~~~~~~~~~~~~~
 
-* Normalize post-release spellings for rev/r prefixes. :issue:`35`
+* Normalize post-release spellings for rev/r prefixes. `#35 <https://github.com/pypa/packaging/issues/35>`__
 
 
 15.2 - 2015-05-13

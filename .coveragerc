@@ -1,6 +1,6 @@
 [run]
 branch = True
-omit = packaging/_compat.py
+omit = packaging2/_compat.py
 
 [report]
 exclude_lines =

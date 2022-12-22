@@ -11,8 +11,8 @@ import warnings
 import pretend
 import pytest
 
-from packaging import _manylinux
-from packaging._manylinux import (
+from packaging2 import _manylinux
+from packaging2._manylinux import (
     _ELFFileHeader,
     _get_elf_header,
     _get_glibc_version,
