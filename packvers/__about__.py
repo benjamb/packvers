@@ -17,7 +17,7 @@ __title__ = "packvers"
 __summary__ = "Core utilities for Python packages. Fork to support LegacyVersion"
 __uri__ = "https://github.com/nexB/packvers"
 
-__version__ = "21.4"
+__version__ = "21.5"
 
 __author__ = "Donald Stufft and individual contributors"
 __email__ = "donald@stufft.io"
